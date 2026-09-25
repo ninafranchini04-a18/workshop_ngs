@@ -1,0 +1,7 @@
+FROM docker.io/mambaorg/micromamba:1.5.10
+
+RUN micromamba install -y -n base -c conda-forge -c bioconda \
+        fastp=0.23.4 \
+    && micromamba clean -a -y
+
+WORKDIR /work

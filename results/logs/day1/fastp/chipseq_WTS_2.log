@@ -1,0 +1,49 @@
+Detecting adapter sequence for read1...
+>Illumina TruSeq Adapter Read 2
+AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+Detecting adapter sequence for read2...
+>Illumina TruSeq Adapter Read 1
+AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+
+Read1 before filtering:
+total reads: 13542187
+total bases: 2031328050
+Q20 bases: 1958280879(96.404%)
+Q30 bases: 1836170114(90.3926%)
+
+Read2 before filtering:
+total reads: 13542187
+total bases: 2031328050
+Q20 bases: 1973053000(97.1312%)
+Q30 bases: 1876416015(92.3739%)
+
+Read1 after filtering:
+total reads: 13464292
+total bases: 2007422400
+Q20 bases: 1940235476(96.6531%)
+Q30 bases: 1820752211(90.701%)
+
+Read2 after filtering:
+total reads: 13464292
+total bases: 2007680101
+Q20 bases: 1953486639(97.3007%)
+Q30 bases: 1859090021(92.5989%)
+
+Filtering result:
+reads passed filter: 26928584
+reads failed due to low quality: 141154
+reads failed due to too many N: 1562
+reads failed due to too short: 13074
+reads with adapter trimmed: 890236
+bases trimmed due to adapters: 23035715
+
+Duplication rate: 10.6984%
+
+Insert size peak (evaluated by paired-end reads): 221
+
+JSON report: results/logs/day1/fastp/chipseq_WTS_2.fastp.json
+HTML report: results/logs/day1/fastp/chipseq_WTS_2.fastp.html
+
+fastp -i raw_data/fastq/chipseq/WTS_2_R1.fastq.gz -I raw_data/fastq/chipseq/WTS_2_R2.fastq.gz -o results/day1_qc/trimmed_fastq/chipseq/WTS_2_R1.trimmed.fastq.gz -O results/day1_qc/trimmed_fastq/chipseq/WTS_2_R2.trimmed.fastq.gz --detect_adapter_for_pe --cut_tail --cut_tail_window_size 4 --cut_tail_mean_quality 20 --thread 2 --html results/logs/day1/fastp/chipseq_WTS_2.fastp.html --json results/logs/day1/fastp/chipseq_WTS_2.fastp.json 
+fastp v0.23.4, time used: 62 seconds

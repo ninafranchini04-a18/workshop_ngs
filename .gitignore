@@ -1,0 +1,33 @@
+# OS / R
+.DS_Store
+.Rhistory
+.RData
+ 
+# Raw sequencing data
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.sra
+ 
+# Alignment files
+*.sam
+*.bam
+*.bai
+ 
+# Genome tracks
+*.bw
+*.bigWig
+ 
+# Archives
+*.zip
+*.tar
+*.tar.gz
+ 
+# Reference genome and indexes
+reference_genome/*
+!reference_genome/REFERENCE.md
+!reference_genome/.gitkeep
+ 
+# Temporary SRA files
+sra_tmp/
