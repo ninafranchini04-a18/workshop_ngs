@@ -10,3 +10,7 @@
 - Recorded the metadata sources and transformations in `raw_data/metadata/METADATA.md` and reviewed GEO/SRA as an optional route.
 - Ran fastp to trim adapters and low-quality tails, filter poor reads, and create trimmed FASTQ files.
 - Inspected the fastp HTML reports; raw pairs were removed automatically after successful processing.
+
+## Day 2
+
+Mapping and counting were demonstrated in class. I used the provided RNA-seq featureCounts-table checkpoint for DESeq2 because local mapping/counting was not feasible on this laptop.
