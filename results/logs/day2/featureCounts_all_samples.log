@@ -1,0 +1,92 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.6
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 6 BAM files                                      ||
+||                                                                            ||
+||                           WTS_1.filtered.bam                               ||
+||                           WTS_2.filtered.bam                               ||
+||                           WTS_3.filtered.bam                               ||
+||                           WT_1.filtered.bam                                ||
+||                           WT_2.filtered.bam                                ||
+||                           WT_3.filtered.bam                                ||
+||                                                                            ||
+||             Output file : featureCounts_all_samples.txt                    ||
+||                 Summary : featureCounts_all_samples.txt.summary            ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : annotation.gff3 (GTF)                            ||
+||      Dir for temp files : results/day2_rnaseq/counts                       ||
+||                                                                            ||
+||                 Threads : 2                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file annotation.gff3 ...                                   ||
+||    Features : 1551                                                         ||
+||    Meta-features : 1551                                                    ||
+||    Chromosomes/contigs : 1                                                 ||
+||                                                                            ||
+|| Process BAM file WTS_1.filtered.bam...                                     ||
+||    Strand specific : reversely stranded                                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 4187610                                              ||
+||    Successfully assigned alignments : 3876465 (92.6%)                      ||
+||    Running time : 0.05 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WTS_2.filtered.bam...                                     ||
+||    Strand specific : reversely stranded                                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 4354193                                              ||
+||    Successfully assigned alignments : 4011934 (92.1%)                      ||
+||    Running time : 0.05 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WTS_3.filtered.bam...                                     ||
+||    Strand specific : reversely stranded                                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 4706414                                              ||
+||    Successfully assigned alignments : 4339612 (92.2%)                      ||
+||    Running time : 0.05 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WT_1.filtered.bam...                                      ||
+||    Strand specific : reversely stranded                                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 5007420                                              ||
+||    Successfully assigned alignments : 4719849 (94.3%)                      ||
+||    Running time : 0.08 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WT_2.filtered.bam...                                      ||
+||    Strand specific : reversely stranded                                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 6737240                                              ||
+||    Successfully assigned alignments : 6356178 (94.3%)                      ||
+||    Running time : 0.12 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WT_3.filtered.bam...                                      ||
+||    Strand specific : reversely stranded                                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 4807530                                              ||
+||    Successfully assigned alignments : 4531328 (94.3%)                      ||
+||    Running time : 0.07 minutes                                             ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "results/day2_rnaseq/cou  ||
+|| nts/featureCounts_all_samples.txt.summary"                                 ||
+||                                                                            ||
+\\============================================================================//
+
